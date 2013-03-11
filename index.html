@@ -13,9 +13,7 @@
         width: 100%;
         height: 100%;
       }
-      #content h1 {
-        position: absolute;
-        z-index: 10;
+      #header {
         padding: 10 10 10 10;
         background-color: #000;
         display: block;
@@ -32,6 +30,7 @@
         display: none;
       }
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 
     <link rel="stylesheet" type="text/css" href="vendor/css/jquery.pageslide.css">
     <link rel="stylesheet" type="text/css" href="vendor/css/jquery-ui.css">
@@ -39,20 +38,22 @@
 
   <body>
     <div id="content">
-      <h1>
+      <div data-role="header" id="header">
         <a class="open" href="#menu">open</a>Denver Street Construction
-      </h1>
-      <div id="map">
+      </div>
+      <div data-role="content" id="map">
       </div>
 
       <div id="menu">
-        Start: <input type="text" id="start_datetime"></input>
-        End: <input type="text" id="end_datetime"></input>
+        <br />Start: <input type="text" id="start_datetime"></input>
+        <br />End: <input type="text" id="end_datetime"></input>
       </div>
     </div>
+
     <script type="text/javascript" src="vendor/js/lodash.js"></script>
     <script type="text/javascript" src="vendor/js/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="vendor/js/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/css/jquery.pageslide.css">
     <script type="text/javascript" src="vendor/js/jquery.pageslide.min.js"></script>
     <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
     <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />

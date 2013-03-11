@@ -27,7 +27,7 @@ function init() {
     });
 
   $('a.open').pageslide();
-
+  $('#start_datetime').datepicker()
 }
 
 $(document).ready(function() {
