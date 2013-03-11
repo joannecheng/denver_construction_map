@@ -25,6 +25,9 @@ function init() {
         marker.bindPopup(popup.contentHTML());
       });
     });
+
+  $('a.open').pageslide();
+
 }
 
 $(document).ready(function() {

@@ -7,6 +7,13 @@
     <style type="text/css">
       body {
         margin: 0;
+        font: 14px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      #content h1 {
+        padding: 10 10 10 10;
+        background-color: #000;
+        display: block;
+        color: #fff;
       }
       #map {
         width: 100%;
@@ -18,7 +25,16 @@
   </head>
 
   <body>
-    <div id="map">
+    <div id="content">
+      <h1>
+        <a class="open" href="#menu">open</a>Denver Street Construction
+      </h1>
+      <div id="map">
+      </div>
+
+      <div id="menu">
+        Date Selector goes here
+      </div>
     </div>
     <script type="text/javascript" src="/vendor/js/lodash.js"></script>
     <script type="text/javascript" src="/vendor/js/jquery-1.9.1.js"></script>
@@ -27,7 +43,7 @@
     <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
     <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.1"></script>
     <script type="text/javascript" src="main.js"></script>
-    
+
   </body>
 
 </html>
