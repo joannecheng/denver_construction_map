@@ -3,13 +3,19 @@
     <title>
       Current Denver Street Construction
     </title>
-    <link rel="stylesheet" type="text/css" href="/vendor/css/jquery.pageslide.css">
     <style type="text/css">
       body {
+        padding: 0;
         margin: 0;
         font: 14px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
+      #content {
+        width: 100%;
+        height: 100%;
+      }
       #content h1 {
+        position: absolute;
+        z-index: 10;
         padding: 10 10 10 10;
         background-color: #000;
         display: block;
@@ -21,7 +27,13 @@
         margin: 0;
         padding: 0;
       }
+
+      #secondary {
+        display: none;
+      }
     </style>
+
+    <link rel="stylesheet" type="text/css" href="/vendor/css/jquery.pageslide.css">
   </head>
 
   <body>
